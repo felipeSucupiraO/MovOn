@@ -8,84 +8,73 @@
         <meta name="keywords" content="MovOn, catalog, movies, series, watch, online, free ">
         <title>MovOn - The best free movies and series catalog!</title>
         <link rel="icon" href="./favicon.ico">
+        <link rel="stylesheet" href="./styles/styles.css">
     </head>
 
     <body>
 
-        <h1>MovOn</h1>
+        <h1 class="inv">MovOn</h1>
 
         <header>
-            <div class="logo">
-                <img src="./images/movon.png" alt="MovOn Logo">
-            </div>
+            <img class="logo" src="./images/movon.png" alt="MovOn Logo">
+
             <nav>
-                <h2>Navigation</h2>
-                <ul>
+                <h2 class="inv">Navigation</h2>
+                <!-- Experiment with type attribute to style the list -->
+                <ul class="nav">
                     <li><a href="./index.html" title="Home Page">Home</a></li>
                     <li><a href="./pages/explore.html" title="Explore Page">Explore</a></li>
                     <li><a href="./pages/mylist.html" title="My list">My List</a></li>
                 </ul>      
             </nav>
-            <div id="headerLoginButton">
-                <a href="./pages/login.html" title="Sign In Page">Sign In</a>
-                <a href="./pages/login.html" title="LogIn Page">Login</a>
-            </div>
-            <div id="accountIcon">
-                <img src="./images/accountpicture.png" alt="Profile Icon">
+
+            <div class="profile-section">
+                <a class="login-link" href="./pages/login.html" title="Sign In Page">Sign In</a>
+                <a class="login-link" href="./pages/login.html" title="LogIn Page">Login</a>
+                <img class="icon" src="./images/accountpicture.png" alt="Profile Icon">
             </div>
         </header>
 
-        <hr>
+        <hr class="inv">
 
         <main>
-            <article id="mainPart">
-                <h2>Home Text</h2>
-                <div id="mainText">
-                    <p>The best movies and series catalog.</p>
-                </div>
-                <div id="exploreButton">
-                    <form action="./pages/explore.html">
-                        <button type="submmit">
-                            Explore
-                        </button>
-                    </form>
-                </div>
-                <div id="mainLoginButton">
-                    <a href="./pages/login.html" title="LogIn Page">Login</a>
-                </div>
+            <article class="main-part">
+                <h2 class="inv">Home Text</h2>
+                <p class="h1">The best movies and series catalog.</p>
+                <!-- I'm not sure if I should use the class in the button tag or in the form tag -->
+                <form action="./pages/explore.html">
+                    <button class="button" type="submmit">
+                        Explore
+                    </button>
+                </form>
+                <a class="login-link" href="./pages/login.html" title="LogIn Page">Login</a>
             </article>
 
-            <hr>
+            <hr class="inv">
 
-            <aside id="movieShowcase">
-                <h2>Movie Showcase</h2>
-                <div id="movieShowcaseText">
-                    <p>The man in the woods</p>
-                </div>
-                <img src="./images/maninthewoods.jpeg" alt="'Man in the woods' movie poster.">
+            <aside class="movie-showcase">
+                <h2 class="inv">Movie Showcase</h2>
+                <p class="h2">The man in the woods</p>
+                <img class="movie-horizontal-poster" src="./images/maninthewoodshorizontal.jpeg" alt="'Man in the woods' movie poster.">
                 <!-- Should this image have alt or not? -->
             </aside>
         </main>
         
-        <hr>
+        <hr class="inv">
 
         <footer>
-            <h2>Footer</h2>
-            <div class="logo">
-                <img src="./images/movon.png" alt="MovOn Logo">
-            </div>
-            <div id="lowerFooter">
-                <div id="socials">
-                    <ul>
-                        <li><a href="https://www.twitter.com" title="MovOn Twitter Account"><img src="./images/twitterlogo.png" alt="Twitter Profile Link"></a></li>
-                        <li><a href="https://www.youtube.com" title="MovOn Youtube Account"><img src="./images/youtubelogo.png" alt="Youtube Channel Link"></a></li>
-                        <li><a href="https://www.instagram.com" title="MovOn Instagram Account"><img src="./images/instagramlogo.png" alt="Instagram Profile Link"></a></li>
-                    </ul>
-                </div>
-                <div id="copyright">
-                    <p>All copyright reserverd.</p>
-                </div>
-            </div>
+            <h2 class="inv">Footer</h2>
+
+                <!-- Experiment with type attribute to style the list -->
+            <ul class="socials">
+                <li><a class="icon" href="https://www.twitter.com" title="MovOn Twitter Account"><img src="./images/twitterlogo.png" alt="Twitter Profile Link"></a></li>
+                <li><a class="icon" href="https://www.youtube.com" title="MovOn Youtube Account"><img src="./images/youtubelogo.png" alt="Youtube Channel Link"></a></li>
+                <li><a class="icon" href="https://www.instagram.com" title="MovOn Instagram Account"><img src="./images/instagramlogo.png" alt="Instagram Profile Link"></a></li>
+            </ul>
+
+            <img class="logo" src="./images/movon.png" alt="MovOn Logo">
+
+            <p class="copyright">All copyright reserverd.</p>
         </footer>
 
     </body>

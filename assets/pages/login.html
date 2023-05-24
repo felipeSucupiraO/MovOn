@@ -11,68 +11,63 @@
         <h1>LogIn</h1>
 
         <header>
-            <div class="logo">
-                <img src="../images/movon.png" alt="MovOn Logo">
-            </div>
+            <img class="logo" src="../images/movon.png" alt="MovOn Logo">
+
             <nav>
-                <h2>Navigation</h2>
-                <ul>
+                <h2 class="inv">Navigation</h2>
+                <!-- Experiment with type attribute to style the list -->
+                <ul class="nav">
                     <li><a href="../index.html" title="Home Page">Home</a></li>
                     <li><a href="./explore.html" title="Explore Page">Explore</a></li>
                     <li><a href="./mylist.html" title="My list">My List</a></li>
                 </ul>      
             </nav>
-            <div id="headerLoginButton">
-                <a href="./login.html" title="Sign In Page">Sign In</a>
-                <a href="./login.html" title="LogIn Page">Login</a>
-            </div>
-            <div id="accountIcon">
-                <img src="../images/accountpicture.png" alt="Profile Icon">
+
+            <div class="profile-section">
+                <a class="login-link" href="./login.html" title="Sign In Page">Sign In</a>
+                <a class="login-link" href=".login.html" title="LogIn Page">Login</a>
+                <img class="icon" src="../images/accountpicture.png" alt="Profile Icon">
             </div>
         </header>
 
-        <hr>
+        <hr class="inv">
 
         <main>
-            <article id="loginBlock">
+            <article class="login-container">
                 <h2>Log In</h2>
-                <form action="../scripts">
+                <form class="login-form" action="../scripts/script.js">
                     <ul>
                         <li>
-                            <label for="emailInput">Email:</label>
+                            <label class="login-form-label" for="emailInput">Email</label>
                             <input type="email" name="email" id="emailInput">
                         </li>
                         <li>
-                            <label for="passwordInput">Password:</label>
+                            <label class="login-form-label" for="passwordInput">Password:</label>
                             <input type="password" name="password" id="passwordInput">
                         </li>
                         <li>
-                            <input type="submit" value="Login">
+                            <input class="button login-form-button" type="submit" value="Login">
                         </li>
                     </ul>
                 </form>
             </article>
         </main>
 
-        <hr>
+        <hr class="inv">
 
         <footer>
-            <h2>Footer</h2>
-            <div class="logo">
-                <img src="../images/movon.png" alt="MovOn Logo">
-            </div>
-            <div id="lowerFooter">
-                <div id="socials">
-                    <ul>
-                        <li><a href="https://www.twitter.com" title="MovOn Twitter Account"><img src="../images/twitterlogo.png" alt="Twitter Profile Link"></a></li>
-                        <li><a href="https://www.youtube.com" title="MovOn Youtube Account"><img src="../images/youtubelogo.png" alt="Youtube Channel Link"></a></li>
-                        <li><a href="https://www.instagram.com" title="MovOn Instagram Account"><img src="../images/instagramlogo.png" alt="Instagram Profile Link"></a></li>
-                    </ul>
-                </div>
-                <div id="copyright">
-                    <p>All copyright reserverd.</p>
-                </div>
-            </div>
+            <h2 class="inv">Footer</h2>
+
+            <!-- Experiment with type attribute to style the list -->
+            <ul class="socials">
+                <li><a class="icon" href="https://www.twitter.com" title="MovOn Twitter Account"><img src="../images/twitterlogo.png" alt="Twitter Profile Link"></a></li>
+                <li><a class="icon" href="https://www.youtube.com" title="MovOn Youtube Account"><img src="../images/youtubelogo.png" alt="Youtube Channel Link"></a></li>
+                <li><a class="icon" href="https://www.instagram.com" title="MovOn Instagram Account"><img src="../images/instagramlogo.png" alt="Instagram Profile Link"></a></li>
+            </ul>
+
+            <img class="logo" src="../images/movon.png" alt="MovOn Logo">
+
+            <p class="copyright">All copyright reserverd.</p>
         </footer>
 
     </body>
