@@ -1,4 +1,169 @@
-div
-{
-    display: inline;
+/* 
+General
+    font-family: 'Inter', sans-serif;
+Titles
+    font-family: 'Space Grotesk', sans-serif;
+*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* ------------------
+    Typography
+   ------------------ */
+
+h1,
+h2,
+h3,
+p,
+.h1,
+.h2,
+.h3,
+.subtext,
+a {
+    color: #ffffff;
+    margin: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* put the sizes on the typography */
+
+h1, .h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h2,
+.h2,
+h3,
+.h3 {
+    font-weight: 500;
+}
+
+h2, .h2 {
+    font-size: 2.25rem;
+}
+
+h3, .h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.subtext {
+    color: #545454;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ----------------
+    Layout 
+   ---------------- */
+
+.inv {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 3.6%;
+}
+
+.icon {
+    max-width: 23%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* 
+header 
+*/ 
+
+header {
+    background-color: #030052;
+    padding: 1.5em;
+}
+
+/* the only reason why nav is a flex is to align the ul vertically */
+nav {
+    width: 23%;
+    
+    margin-right: 55%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+.profile-section {
+    width: 10%;
+
+    display: flex;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+.login-link {
+    color: #ffffff;
+}
+
+.profile-icon {
+    max-width: 41%;
+}
+
+@media (max-width: 810px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin: 0;
+    }
+}
+
+/* main */
+
+main {
+    background-color: #004BBD;
 }
