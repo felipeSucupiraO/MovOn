@@ -54,7 +54,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 p {
@@ -91,10 +91,7 @@ a:hover {
 
 .logo {
     max-width: 3.6%;
-}
-
-.icon {
-    max-width: 23%;
+    align-self: center;
 }
 
 ul {
@@ -112,21 +109,22 @@ header {
     padding: 1.5em;
 }
 
-/* the only reason why nav is a flex is to align the ul vertically */
 nav {
-    width: 23%;
+    width: 38%;
     
-    margin-right: 55%;
+    margin-right: 40%;
     
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    /* the only reason why nav is a flex is to align the ul vertically */
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
     margin: auto 0;
+
+    width: 100%;
 }
 
 .profile-section {
@@ -134,6 +132,7 @@ nav ul {
 
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .login-container {
@@ -148,22 +147,63 @@ nav ul {
 }
 
 .profile-icon {
-    max-width: 41%;
+    max-width: 30%;
 }
 
 @media (max-width: 810px) {
-    header {
-        flex-direction: column;
-        align-items: center;
+    .logo {
+        max-width: 14%;
+    }
+    
+    nav {        
+        margin: 0;
     }
 
-    nav {
-        margin: 0;
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        text-align: center;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        width: 15%;
+    }
+
+    .login-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-icon {
+        align-self: center;
+
+        max-width: 50%;
     }
 }
 
-/* main */
+
+/*
+main 
+*/
 
 main {
     background-color: #004BBD;
+}
+
+.movie-horizontal-poster {
+    max-width: 25%;
+}
+
+
+/* 
+footer
+*/
+
+footer ul img {
+    width: 2%;
 }
