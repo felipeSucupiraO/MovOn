@@ -115,7 +115,8 @@ nav {
     margin-right: 40%;
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     /* the only reason why nav is a flex is to align the ul vertically */
 }
 
