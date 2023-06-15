@@ -8,7 +8,7 @@
         <meta name="keywords" content="MovOn, catalog, movies, series, watch, online, free ">
         <title>MovOn - The best free movies and series catalog!</title>
         <link rel="icon" href="./favicon.ico">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/styles.css">
     </head>
 
@@ -16,7 +16,7 @@
 
         <h1 class="inv">MovOn</h1>
 
-        <header class="flex">
+        <header>
             <img class="logo" src="./images/movon.png" alt="MovOn Logo">
 
             <nav>
@@ -30,8 +30,8 @@
 
             <div class="profile-section">
                 <div class="login-container">
-                    <a class="login-link subtext" href="./pages/login.html" title="Sign In Page">Sign In</a>
-                    <a class="login-link subtext" href="./pages/login.html" title="LogIn Page">Login</a>
+                    <a class="login-link" href="./pages/login.html" title="Sign In Page">Sign In</a>
+                    <a class="login-link" href="./pages/login.html" title="LogIn Page">Login</a>
                 </div>
                 <img class="profile-icon" src="./images/accountpicture.png" alt="Profile Icon">
             </div>
@@ -40,26 +40,30 @@
         <hr class="inv">
 
         <main>
-            <article class="main-part">
-                <h2 class="inv">Home Text</h2>
-                <p class="h1">The best movies and series catalog</p>
-                <!-- I'm not sure if I should use the class in the button tag or in the form tag -->
-                <form action="./pages/explore.html">
-                    <button class="button" type="submmit">
-                        Explore
-                    </button>
-                </form>
-                <a class="login-link" href="./pages/login.html" title="LogIn Page">Login</a>
-            </article>
-
-            <hr class="inv">
-
-            <aside class="movie-showcase">
-                <h2 class="inv">Movie Showcase</h2>
-                <p class="h2">The man in the woods</p>
-                <img class="movie-horizontal-poster" src="./images/movies/maninthewoodshorizontal.jpeg" alt="&#34Man in the woods&#34 movie poster.">
-                <!-- Should this image have alt or not? -->
-            </aside>
+            <div class="container">
+                <article class="main-part">
+                    <h2 class="inv">Home Text</h2>
+                    <p class="h1">The best movies and series catalog</p>
+                    <!-- I'm not sure if I should use the class in the button tag or in the form tag -->
+                    <div class="lower-main-part">
+                        <form action="./pages/explore.html">
+                            <button class="button" type="submmit">
+                                Explore
+                            </button>
+                        </form>
+                        <a class="login-link" href="./pages/login.html" title="LogIn Page">Login</a>
+                    </div>
+                </article>
+    
+                <hr class="inv">
+    
+                <aside class="movie-showcase">
+                    <h2 class="inv">Movie Showcase</h2>
+                    <img class="movie-horizontal-poster" src="./images/movies/maninthewoodshorizontal.jpeg" alt="&#34Man in the woods&#34 movie poster.">
+                    <p class="h2">The man in the woods</p>
+                    <!-- Should this image have alt or not? -->
+                </aside>
+            </div>
         </main>
         
         <hr class="inv">

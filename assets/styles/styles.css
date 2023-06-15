@@ -3,11 +3,19 @@ General
     font-family: 'Inter', sans-serif;
 Titles
     font-family: 'Space Grotesk', sans-serif;
+Buttons
+    font-family: 'Roboto Mono', monospace;
 */
+
+html {
+    font-size: 115%;
+}
 
 body {
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
+
+
 }
 
 
@@ -76,6 +84,11 @@ a:hover {
 }
 
 
+button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+}
+
 /* ----------------
     Layout 
    ---------------- */
@@ -84,15 +97,17 @@ a:hover {
     display: none;
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
 .logo {
     max-width: 3.6%;
     align-self: center;
 }
+
+.login-link {
+    color: #545454;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+/* I don't know if I should put the subtext class in the html or to change the login-link class itself. Changing the html to fix the style don't seem right, seems to break the separation of concerns rule  */
 
 ul {
     list-style: none;
@@ -106,7 +121,11 @@ header
 
 header {
     background-color: #030052;
+
     padding: 1.5em;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
@@ -196,8 +215,62 @@ main {
     background-color: #004BBD;
 }
 
+main .container {
+    width: 90%;
+    padding: 13% 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-part {
+    width: 40%;
+}
+
+.lower-main-part {
+    display: flex;   
+    align-items: center;
+
+    height: auto;
+
+    margin-top: 4%;
+}
+
+.lower-main-part form {
+    margin-right: 2em;
+
+    height: 100%;
+}
+
+.lower-main-part button {
+    width: 100%;
+    height: 100%;
+
+    font-weight: 600;
+
+    padding: 0.5em 3em;
+
+    background-color: #ffffff;
+}
+/* the size of the button here works on a cascading way: the button element is the size of the form element. The form has auto width, but the height is the size of the div. The div has auto height. This way, the form structure can exist while the button's size depends only of the size of the letters inside it. */
+
+
+.movie-showcase {
+    width: 50%;
+
+    text-align: end;
+}
+
+.movie-showcase p {
+    -webkit-text-stroke: 1.5px black;
+
+    margin-top: -1.4em;
+    margin-right: 8rem;
+}
+
 .movie-horizontal-poster {
-    max-width: 25%;
+    max-width: 100%;
 }
 
 
