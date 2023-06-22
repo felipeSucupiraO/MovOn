@@ -86,7 +86,12 @@ a:hover {
 
 button {
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.25rem;
+}
+
+.login-link {
+    color: #545454;
+    font-weight: 300;
+    font-size: 0.75rem;
 }
 
 /* ----------------
@@ -97,17 +102,10 @@ button {
     display: none;
 }
 
-.login-link {
-    color: #545454;
-    font-weight: 300;
-    font-size: 0.75rem;
-} /* I don't know if I should put the subtext class in the html or to change the login-link class itself. Changing the html to fix the style don't seem right, seems to break the separation of concerns rule  */
-
 ul {
     list-style: none;
     padding: 0;
 }
-
 
 /* 
 header 
@@ -206,7 +204,7 @@ nav ul {
 
 
 /*
-main 
+main
 */
 
 main {
@@ -297,6 +295,10 @@ main .container {
         margin: 13em 0;
     }
 }
+
+/* 
+main - explore
+*/
 
 /* 
 footer
