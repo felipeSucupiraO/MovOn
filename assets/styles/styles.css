@@ -246,6 +246,7 @@ main .container {
     height: 100%;
 
     font-weight: 600;
+    font-size: 1.25rem;
 
     padding: 0.5em 3em;
 
@@ -299,6 +300,44 @@ main .container {
 /* 
 main - explore
 */
+
+.movie-row {
+    padding: 0.5em;
+}
+
+.movie-row ul {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.5em;
+}
+
+.movie-row li {
+    width: 15%;
+}
+
+.movie-card {
+    width: 100%;
+}
+
+.movie-vertical-poster {
+    max-width: 100%;
+}
+
+.movie-card-bar {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+.play-button, .my-list-button {
+    width: 20%;
+}
+
+.play-button img, .my-list-button img {
+    width: 100%;
+}
 
 /* 
 footer
