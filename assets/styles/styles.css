@@ -211,7 +211,7 @@ main {
     background-color: #004BBD;
 }
 
-main .container {
+main > .container {
     width: 90%;
     padding: 13% 5%;
 
@@ -305,15 +305,50 @@ main - explore
     padding: 0.5em;
 }
 
-.movie-row ul {
+.movie-row > .container {
     display: flex;
-    justify-content: space-between;
+}
+
+.movie-row > h2 {
+    padding: 0.5em;
+}
+
+.scroll-button {
+    width: 5%;
+
+    display: flex;
+    align-items: center;
+    /* this flex is just to align the image vertically */
+}
+
+.scroll-button img {
+    width: 100%;
+}
+
+.scroll-button-right img {
+    transform: scaleX(-1);
+}
+
+.movie-row ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    gap: 1em;
+
+    overflow-x: scroll;
+    overscroll-behavior: contain;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     padding: 0.5em;
 }
 
+.movie-row ul::-webkit-scrollbar {
+    display: none;
+}
+
 .movie-row li {
-    width: 15%;
+    width: 100%;
 }
 
 .movie-card {
