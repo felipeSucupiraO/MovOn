@@ -8,7 +8,7 @@ Buttons
 */
 
 html {
-    font-size: 115%;
+    font-size: 150%;
 }
 
 body {
@@ -283,7 +283,7 @@ main > .container {
 }
 
 @media(max-width: 810px) {
-    main .container {
+    main > .container {
         flex-direction: column;
         align-items: center;
     }
@@ -314,7 +314,7 @@ main - explore
 }
 
 .scroll-button {
-    width: 5%;
+    width: 10%;
 
     display: flex;
     align-items: center;
@@ -374,21 +374,29 @@ main - explore
     width: 100%;
 }
 
+@media (max-width: 810px) {
+    .scroll-button {
+        width: 50%;
+    }
+}
+
 /* 
 footer
 */
 
 footer {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
     align-items: center;
+    gap: 60%;
 
     background-color: #000436;
+
+    padding: 0 20%;
 }
 
-footer ul {
-    width: 8%;
-
+.socials {
     margin: 0;
 
     display: flex;
@@ -396,7 +404,7 @@ footer ul {
 }
 
 footer li {
-    width: 20%;
+    width: 25%;
 }
 
 footer ul img {
@@ -404,9 +412,7 @@ footer ul img {
 }
 
 .footer-logo {
-    width: 8%;
     padding: 0.7em;
-
 }
 
 .footer-logo img {
@@ -423,15 +429,17 @@ footer ul img {
 }
 
 @media(max-width: 810px) {
-    .footer-logo {
-        width: 40%;
-        padding: 0.3em;
+    footer {
+        grid-auto-columns: 35%;
+        gap: 30%;
+    }
+    
+    .socials {
+        justify-content: space-around;
     }
 
-    footer ul {
-        width: 40%;
-
-        justify-content: space-around;
+    .footer-logo {
+        padding: 0.3em;
     }
 
     .copyright {
