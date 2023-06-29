@@ -121,14 +121,14 @@ header {
 }
 
 .header-logo {
-    max-width: 3.6%;
+    max-width: 5%;
     align-self: center;
 }
 
 nav {
-    width: 38%;
+    width: 45%;
     
-    margin-right: 40%;
+    margin-right: 30%;
     
     display: flex;
     flex-direction: column;
@@ -209,6 +209,8 @@ main
 
 main {
     background-color: #004BBD;
+
+    min-height: 700px;
 }
 
 main > .container {
@@ -301,15 +303,15 @@ main > .container {
 main - explore
 */
 
-.movie-row {
+.movie-list {
     padding: 0.5em;
 }
 
-.movie-row > .container {
+.movie-list > .container {
     display: flex;
 }
 
-.movie-row > h2 {
+.movie-list > h2 {
     padding: 0.5em;
 }
 
@@ -329,7 +331,7 @@ main - explore
     transform: scaleX(-1);
 }
 
-.movie-row ul {
+.movie-list ul {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 23%;
@@ -337,17 +339,19 @@ main - explore
 
     overflow-x: scroll;
     overscroll-behavior: contain;
+    /* these attributes under here take off the scrolling bar for some navigators */
     -ms-overflow-style: none;
     scrollbar-width: none;
 
     padding: 0.5em;
 }
 
-.movie-row ul::-webkit-scrollbar {
+/* this selector takes off the scroll bar for some navigators */
+.movie-list ul::-webkit-scrollbar {
     display: none;
 }
 
-.movie-row li {
+.movie-list li {
     width: 100%;
 }
 
@@ -377,6 +381,28 @@ main - explore
 @media (max-width: 810px) {
     .scroll-button {
         width: 50%;
+    }
+}
+
+/* 
+main - My List
+*/
+
+.my-list-list ul {
+    width: 100%;
+    
+    padding: 0;
+
+    overflow-x: visible;
+
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    grid-template-columns: repeat(auto-fill, minmax(246px, 1fr));
+}
+
+@media (max-width: 810px) {
+    .my-list-list ul {
+        grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
     }
 }
 
