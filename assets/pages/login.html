@@ -6,17 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LogIn - MovOn</title>
         <link rel="icon" href="../favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/styles.css">
     </head>
     <body>
-        <h1>LogIn</h1>
+        <h1 class="inv">LogIn</h1>
 
         <header>
-            <img class="logo" src="../images/movon.png" alt="MovOn Logo">
+            <img class="header-logo" src="../images/movon.png" alt="MovOn Logo">
 
             <nav>
                 <h2 class="inv">Navigation</h2>
-                <!-- Experiment with type attribute to style the list -->
-                <ul class="nav">
+                <ul class="h3">
                     <li><a href="../index.html" title="Home Page">Home</a></li>
                     <li><a href="./explore.html" title="Explore Page">Explore</a></li>
                     <li><a href="./mylist.html" title="My list">My List</a></li>
@@ -24,32 +25,37 @@
             </nav>
 
             <div class="profile-section">
-                <a class="login-link" href="./login.html" title="Sign In Page">Sign In</a>
-                <a class="login-link" href=".login.html" title="LogIn Page">Login</a>
-                <img class="icon" src="../images/accountpicture.png" alt="Profile Icon">
+                <div class="login-links-container">
+                    <a class="login-link" href="./login.html" title="Sign In Page">Sign In</a>
+                    <a class="login-link" href="./login.html" title="LogIn Page">Login</a>
+                </div>
+                <img class="profile-icon" src="../images/accountpicture.png" alt="Profile Icon">
             </div>
         </header>
 
         <hr class="inv">
 
-        <main>
-            <article class="login-container">
+        <main class="login-page-main">
+            <article class="login-box">
                 <h2>Log In</h2>
                 <form class="login-form" action="../scripts/script.js">
                     <ul>
-                        <li>
-                            <label class="login-form-label" for="emailInput">Email</label>
-                            <input type="email" name="email" id="emailInput">
+                        <li class="login-form-input">
+                            <p>Email:</p>
+                            <input type="email" name="email">
                         </li>
-                        <li>
-                            <label class="login-form-label" for="passwordInput">Password:</label>
-                            <input type="password" name="password" id="passwordInput">
+                        <li class="login-form-input">
+                            <p>Password</p>
+                            <input type="password" name="password">
                         </li>
-                        <li>
-                            <input class="button login-form-button" type="submit" value="Login">
+                        <li class="button login-form-button">
+                            <input type="submit" value="Log-In">
                         </li>
                     </ul>
                 </form>
+
+                <p class="subtext">Already have an account?</p>
+                <a class="sign-in subtext" href="./login.html">Sign In</a>
             </article>
         </main>
 
@@ -58,16 +64,19 @@
         <footer>
             <h2 class="inv">Footer</h2>
 
-            <!-- Experiment with type attribute to style the list -->
+                <!-- Experiment with type attribute to style the list -->
             <ul class="socials">
-                <li><a class="icon" href="https://www.twitter.com" title="MovOn Twitter Account"><img src="../images/twitterlogo.png" alt="Twitter Profile Link"></a></li>
-                <li><a class="icon" href="https://www.youtube.com" title="MovOn Youtube Account"><img src="../images/youtubelogo.png" alt="Youtube Channel Link"></a></li>
-                <li><a class="icon" href="https://www.instagram.com" title="MovOn Instagram Account"><img src="../images/instagramlogo.png" alt="Instagram Profile Link"></a></li>
+                <li><a href="https://www.twitter.com" title="MovOn Twitter Account"><img src="../images/twitterlogo.png" alt="Twitter Profile Link"></a></li>
+                <li><a href="https://www.youtube.com" title="MovOn Youtube Account"><img src="../images/youtubelogo.png" alt="Youtube Channel Link"></a></li>
+                <li><a href="https://www.instagram.com" title="MovOn Instagram Account"><img src="../images/instagramlogo.png" alt="Instagram Profile Link"></a></li>
             </ul>
 
-            <img class="logo" src="../images/movon.png" alt="MovOn Logo">
+            <div class="footer-logo">
+                <img class="logo" src="../images/movon.png" alt="MovOn Logo">
+    
+                <p class="copyright subtext">&#169 All rights reserverd.</p>
+            </div>
 
-            <p class="copyright">All copyright reserverd.</p>
         </footer>
 
     </body>
