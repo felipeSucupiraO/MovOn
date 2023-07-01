@@ -501,6 +501,50 @@ main - login
 /* 
 movie-page
 */
+.back-button {
+    display: flex;
+    justify-content: space-around;
+
+    width: 10%;
+
+    align-items: center;
+}
+
+.back-button > img {
+    width: 30%;
+}
+
+.movie-page-main {
+    min-height: 540px;
+
+    padding: 10%;
+
+    display: flex;
+    align-items: center;
+}
+
+/* .watch-form {
+    width: 25%;
+} */
+
+.watch-button {
+    /* width: 100%; */
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    padding: .5em;
+    border: 0.1em solid black;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+    color: black;
+}
+
+.watch-button:hover {
+    background-color: #030052;
+    color: #ffffff;
+}
 
 /* 
 footer

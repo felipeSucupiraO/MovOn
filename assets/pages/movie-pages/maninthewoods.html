@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Men in The Woods - MovOn</title>
         <link rel="icon" href="../../favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../styles/styles.css">
     </head>
 
 
@@ -14,36 +16,43 @@
 
         <header>
             <h2 class="inv">Header</h2>
-            <a class="back-button" href="../explore.html"><img class="icon" src="../../images/arrowback.png" alt=""><p>Back</p></a>
+            <a class="back-button" href="../explore.html"><img src="../../images/arrowback.png" alt=""><p>Back</p></a>
 
             <div class="profile-section">
-                <a class="login-link" href="../login.html" title="Sign In Page">Sign In</a>
-                <a class="login-link" href="../login.html" title="LogIn Page">Login</a>
-                <img class="icon" src="../../images/accountpicture.png" alt="Profile Icon">
+                <div class="login-links-container">
+                    <a class="login-link" href="../login.html" title="Sign In Page">Sign In</a>
+                    <a class="login-link" href="../login.html" title="LogIn Page">Login</a>
+                </div>
+                <img class="profile-icon" src="../../images/accountpicture.png" alt="Profile Icon">
             </div>
         </header>
 
         <hr class="inv">
 
-        <main>
+        <main class="movie-page-main">
+
             <article class="movie-info">
                 <h2 class="inv">Movie Info</h2>
 
                 <p class="h1">Men in The Woods</p>
+                <br>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet.</p>
-            </article>
 
-            <aside>
-                <img src="../../images/maninthewoods.jpeg" alt="">
-            </aside>
-            <div class="button watch-button">
-                <form action="./maninthewoods.html">
-                    <button type="submit">
+                <br>
+
+                <form class="watch-form" action="./maninthewoods.html">
+                    <button class="button watch-button" type="submit">
                         Watch
                     </button>
                 </form>
-            </div>
+            </article>
+
+            <aside>
+                <img src="../../images/movies/maninthewoodshorizontal.jpeg" alt="">
+            </aside>
+
         </main>
+
     </body>
 </html>
