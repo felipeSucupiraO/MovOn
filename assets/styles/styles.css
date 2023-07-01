@@ -460,8 +460,6 @@ main - login
     text-align: center;
 
     margin: 1em 0;
-
-
 }
 
 .login-form-button > input {
@@ -491,6 +489,18 @@ main - login
 
     width: 100%;
 }
+
+@media (max-width: 810px) {
+    .login-box {
+        width: 60%;
+
+        padding: 10%;
+    }
+}
+
+/* 
+movie-page
+*/
 
 /* 
 footer
