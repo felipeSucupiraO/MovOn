@@ -523,13 +523,7 @@ movie-page
     align-items: center;
 }
 
-/* .watch-form {
-    width: 25%;
-} */
-
 .watch-button {
-    /* width: 100%; */
-
     font-size: 1.5rem;
     font-weight: 500;
 
