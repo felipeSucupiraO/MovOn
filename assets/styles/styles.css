@@ -501,6 +501,7 @@ main - login
 /* 
 movie-page
 */
+
 .back-button {
     display: flex;
     justify-content: space-around;
@@ -517,10 +518,11 @@ movie-page
 .movie-page-main {
     min-height: 540px;
 
-    padding: 10%;
+    padding: 4em 2em;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .watch-button {
@@ -538,6 +540,32 @@ movie-page
 .watch-button:hover {
     background-color: #030052;
     color: #ffffff;
+}
+
+.movie-page-main > aside {
+    width: 60%;
+}
+
+.movie-page-showcase {
+    width: 100%;
+}
+
+@media (max-width: 810px) {
+    .back-button {
+        width: 30%;
+    }
+
+    .movie-page-main {
+        flex-direction: column-reverse;
+
+        padding: 8em 2em;
+
+        gap: 5em;
+    }
+
+    .movie-page-main > aside {
+        width: 100%;
+    }
 }
 
 /* 
