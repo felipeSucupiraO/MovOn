@@ -553,6 +553,8 @@ movie-page
 @media (max-width: 810px) {
     .back-button {
         width: 30%;
+
+        justify-content: center;
     }
 
     .movie-page-main {
