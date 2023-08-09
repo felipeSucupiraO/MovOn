@@ -1,0 +1,13 @@
+{
+    "movies": [
+        {
+            "name": "Man in The Woods",
+            "moviePageUrl": "./movie-pages/man_in_the_woods.html",
+            "moviePageUrlTitle": "'Man in The Woods' Watch Page",
+            "verticalImageUrl": "../images/movies/man_in_the_woods_vertical.jpg",
+            "horizontalImgaeUrl": "../images/movies/man_in_the_woods_horizontal.jpg",
+            "imageAlt": "'Men In The Woods' Movie Poster",
+            "isInList": false
+        }
+    ]
+}

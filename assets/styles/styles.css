@@ -439,6 +439,16 @@ main - explore
     width: 100%;
 }
 
+.my-list-button {
+    background-color: #004BBD;
+    
+    border: 0;
+}
+
+.my-list-button:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 810px) {
     .scroll-button {
         width: 50%;
