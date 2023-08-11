@@ -1,12 +1,23 @@
-const myListButton = $(".my-list-button img");
+const movieCards = $(".movie-card").parent("li");
 
-myListButton.on("click", addMyListMovie);
-
+movieCards.find(".my-list-button").on("click", addMyListMovie);
+     
 function addMyListMovie() {
-    if (sessionStorage.getItem("Man in The Woods") == null) {
-        sessionStorage.setItem("Man in The Woods", "1");
-        alert("\"Man in The Woods\" was added to your list!")
+    // the following line gets the card that was clicked (the div element)
+    let currCard = $(event.target).parents(".movie-card");
+    // the folowing gets the classes of the div
+    let classList = getClassList(currCard[0]);
+    // finally, this one gets the last class of the div element, which will always be the movie's name
+    let movie = classList[classList.length - 1];
+    
+    if (sessionStorage.getItem(movie) == null) {
+        sessionStorage.setItem(movie, "");
+        alert("\"" + movie + "\" was added to your list!")
     } else {
         alert("This movie is already on your list!")
     }
+}
+
+function getClassList(element) {
+    return element.className.split(/\s+/);
 }

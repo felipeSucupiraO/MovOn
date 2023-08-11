@@ -1,13 +1,20 @@
 {
     "movies": [
         {
-            "name": "Man in The Woods",
+            "name": "Man-in-The-Woods",
             "moviePageUrl": "./movie-pages/man_in_the_woods.html",
             "moviePageUrlTitle": "'Man in The Woods' Watch Page",
-            "verticalImageUrl": "../images/movies/man_in_the_woods_vertical.jpg",
-            "horizontalImgaeUrl": "../images/movies/man_in_the_woods_horizontal.jpg",
-            "imageAlt": "'Men In The Woods' Movie Poster",
-            "isInList": false
+            "verticalImageUrl": "../images/movies/Man-in-The-Woods/vertical.jpg",
+            "horizontalImgaeUrl": "../images/movies/Man-in-The-Woods/horizontal.jpg",
+            "imageAlt": "'Men In The Woods' Movie Poster"
+        }, 
+        {
+            "name": "Duck-Ducknildo",
+            "moviePageUrl": "",
+            "moviePageUrlTitle": "'Duck Ducknildo' Watch Page",
+            "verticalImageUrl": "../images/movies/Duck-Ducknildo/vertical.jpg",
+            "horizontalImgaeUrl": "../images/movies/Duck-Ducknildo/horizontal.jpg",
+            "imageAlt": "'Duck Ducknildo' Movie Poster"
         }
     ]
 }

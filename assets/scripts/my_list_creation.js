@@ -1,7 +1,7 @@
 var movieList = $(".my-list-list ul");
-var movieCards = $(".my-list-list li:last-child");
+var movieCard = $(".my-list-list li");
 
-movieCards.hide();
+movieCard.detach();
 
 var data;
 fetch("../data/movies.json")
@@ -11,12 +11,19 @@ fetch("../data/movies.json")
     .then((data) => {
         data.movies.forEach(i => {
             if (sessionStorage.getItem(i.name) != null) {
-                if (sessionStorage.getItem("isFirstMyListMovie") == "true") {
-                    movieCards.show();
-                    sessionStorage.setItem("isFirstMyListMovie", "false");
-                } else {
-                    movieCards.copy.appendTo(movieList);
-                }
+                movieCard.clone().appendTo(movieList);
+
+                let current = $(".my-list-list li:last-child");
+
+                makeMovieCard(current, i);
             }
         });
-    })
+    })  
+    
+function makeMovieCard(movieCard, movieData) {
+    movieCard.find(".my-list-card").addClass(movieData.name);
+    movieCard.find(".movie-vertical-poster").attr("src", movieData.verticalImageUrl);
+    movieCard.find(".movie-vertical-poster").attr("alt", movieData.imageAlt);
+    movieCard.find(".play-button").attr("href", movieData.moviePageUrl);
+    movieCard.find(".play-button").attr("title", movieData.moviePageUrlTitle);
+}
