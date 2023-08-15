@@ -1,20 +1,44 @@
 {
     "movies": [
         {
-            "name": "Man-in-The-Woods",
+            "name": "City-of-Sin",
             "moviePageUrl": "./movie-pages/man_in_the_woods.html",
             "moviePageUrlTitle": "'Man in The Woods' Watch Page",
-            "verticalImageUrl": "../images/movies/Man-in-The-Woods/vertical.jpg",
-            "horizontalImgaeUrl": "../images/movies/Man-in-The-Woods/horizontal.jpg",
-            "imageAlt": "'Men In The Woods' Movie Poster"
+            "verticalImageUrl": "../images/movies/City-of-Sin/vertical.jpg",
+            "horizontalImgaeUrl": "../images/movies/City-of-Sin/horizontal.jpg",
+            "imageAlt": "'City of Sin' Movie Poster"
         }, 
         {
-            "name": "Duck-Ducknildo",
+            "name": "The-Johnsons",
             "moviePageUrl": "",
-            "moviePageUrlTitle": "'Duck Ducknildo' Watch Page",
-            "verticalImageUrl": "../images/movies/Duck-Ducknildo/vertical.jpg",
-            "horizontalImgaeUrl": "../images/movies/Duck-Ducknildo/horizontal.jpg",
-            "imageAlt": "'Duck Ducknildo' Movie Poster"
+            "moviePageUrlTitle": "'The Johnsons' Watch Page",
+            "verticalImageUrl": "../images/movies/The-Johnsons/vertical.jpg",
+            "horizontalImgaeUrl": "../images/movies/The-Johnsons/horizontal.jpg",
+            "imageAlt": "'The Johnsons' Movie Poster"
+        }, 
+        {
+            "name": "Love-Happens",
+            "moviePageUrl": "",
+            "moviePageUrlTitle": "'Love Happens' Watch Page",
+            "verticalImageUrl": "../images/movies/Love-Happens/vertical.jpg",
+            "horizontalImgaeUrl": "../images/movies/Love-Happens/horizontal.jpg",
+            "imageAlt": "'Love Happens' Movie Poster"
+        }, 
+        {
+            "name": "The-Explorer",
+            "moviePageUrl": "",
+            "moviePageUrlTitle": "'The Explorer' Watch Page",
+            "verticalImageUrl": "../images/movies/The-Explorer/vertical.jpg",
+            "horizontalImgaeUrl": "../images/movies/The-Explorer/horizontal.jpg",
+            "imageAlt": "'The Explorer' Movie Poster"
+        }, 
+        {
+            "name": "The-Haunting-of-Sarah-Roberts",
+            "moviePageUrl": "",
+            "moviePageUrlTitle": "'The Haunting of Sarah Roberts' Watch Page",
+            "verticalImageUrl": "../images/movies/The-Haunting-of-Sarah-Roberts/vertical.jpg",
+            "horizontalImgaeUrl": "../images/movies/The-Haunting-of-Sarah-Roberts/horizontal.jpg",
+            "imageAlt": "'The Haunting of Sarah Roberts' Movie Poster"
         }
     ]
 }
