@@ -107,9 +107,9 @@ ul {
     padding: 0;
 }
 
-/* 
-header 
-*/ 
+/* ----------------
+    Header 
+   ---------------- */
 
 header {
     background-color: #030052;
@@ -264,9 +264,9 @@ nav ul {
 }
 
 
-/*
-main
-*/
+/* ----------------
+    Main 
+   ---------------- */
 
 main {
     background-color: #004BBD;
@@ -319,15 +319,15 @@ main > .container {
 .lower-main-part button:hover {
     background-color: red;
     color: #ffffff;
-} /* the size of the button here works on a cascading way: the button element is the size of the form element. The form has auto width, but the height is the size of the div. The div has auto height. This way, the form structure can exist while the button's size depends only of the size of the letters inside it. */
-
+} /* the size of the button here works on a cascading way: the button element is the size of the form element. The form has auto width, but the height is the size of the div. The div has auto height.
+This way, the form structure can exist while the button's size depends only of the size of the letters inside it. */
 
 .movie-showcase {
     width: 50%;
 }
 
 .movie-showcase p {
-    background-color: hsla(0, 0%, 0%, 0.35); /* i used the hsla format to change the background's opacity */
+    background-color: hsla(0, 0%, 0%, 0.35); /* i used the hsla format to change the background's opacity (which isn't working btw) */
 
     transform: translateY(-1.7rem);
 
@@ -360,9 +360,9 @@ main > .container {
     }
 }
 
-/* 
-main - explore
-*/
+/* ----------------
+    Main - Explore 
+   ---------------- */
 
 .movie-list {
     padding: 0.5em;
@@ -455,9 +455,9 @@ main - explore
     }
 }
 
-/* 
-main - My List
-*/
+/* ----------------
+    Main - My List 
+   ---------------- */
 
 .my-list-list ul {
     width: 100%;
@@ -477,9 +477,9 @@ main - My List
     }
 }
 
-/* 
-main - login
-*/
+/* ----------------
+    Main - Login 
+   ---------------- */
 
 .login-page-main {
     display: flex;
@@ -569,9 +569,9 @@ main - login
     }
 }
 
-/* 
-movie-page
-*/
+/* ----------------
+    Movie Page 
+   ---------------- */
 
 .back-button {
     display: flex;
@@ -641,9 +641,9 @@ movie-page
     }
 }
 
-/* 
-footer
-*/
+/* ----------------
+    Footer 
+   ---------------- */
 
 footer {
     display: grid;

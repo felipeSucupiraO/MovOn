@@ -1,10 +1,16 @@
+/* 
+Variables setting
+*/
 var movieList = $(".my-list-list ul");
 var movieCard = $(".my-list-list li");
 var removeButtons;
 
+/* 
+Main code
+*/
+
 movieCard.detach();
 
-var data;
 fetch("../data/movies.json")
 .then((request) => {
     return request.json();
@@ -25,6 +31,10 @@ fetch("../data/movies.json")
     removeButtons.on("click", removeMovie);
 })
 
+/* 
+Functions
+*/
+
 function makeMovieCard(movieCard, movieData) {
     movieCard.find(".movie-card").addClass(movieData.name);
     movieCard.find(".movie-vertical-poster").attr("src", movieData.verticalImageUrl);
@@ -32,7 +42,6 @@ function makeMovieCard(movieCard, movieData) {
     movieCard.find(".play-button").attr("href", movieData.moviePageUrl);
     movieCard.find(".play-button").attr("title", movieData.moviePageUrlTitle);
 }
-
 
 function removeMovie() {
     // the following line gets the card that was clicked (the div element)

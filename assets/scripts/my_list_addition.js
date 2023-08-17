@@ -1,7 +1,18 @@
+/* 
+Variables setting
+*/
 const movieCards = $(".movie-card").parent("li");
 
+/* 
+Main code
+*/
+
 movieCards.find(".my-list-button").on("click", addMyListMovie);
-     
+
+/* 
+Functions
+*/
+
 function addMyListMovie() {
     // the following line gets the card that was clicked (the div element)
     let currCard = $(event.target).parents(".movie-card");
