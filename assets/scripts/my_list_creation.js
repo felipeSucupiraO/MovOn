@@ -50,7 +50,7 @@ function removeMovie() {
     let movie = classList[classList.length - 1];
     sessionStorage.removeItem(movie);
     
-    location.reload();
+    $(event.target).parents("li").remove();
 }
 
 function getClassList(element) {
