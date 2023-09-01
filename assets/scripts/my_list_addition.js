@@ -1,6 +1,7 @@
 /* 
 Variables setting
 */
+
 const movieCards = $(".movie-card").parent("li");
 
 /* 

@@ -8,7 +8,6 @@ var removeButtons;
 /* 
 Main code
 */
-
 movieCard.detach();
 
 fetch("../data/movies.json")
