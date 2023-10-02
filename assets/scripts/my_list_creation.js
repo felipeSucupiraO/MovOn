@@ -44,14 +44,9 @@ function makeMovieCard(movieCard, movieData) {
 
 function removeMovie() {
     // the following line gets the card that was clicked (the div element)
-    let card = $(event.target).parents(".movie-card");
-    let classList = getClassList(card[0])
-    let movie = classList[classList.length - 1];
+    var movie = getMovie($(event.target), true);
+    
     sessionStorage.removeItem(movie);
     
     $(event.target).parents("li").remove();
-}
-
-function getClassList(element) {
-    return element.className.split(/\s+/);
 }

@@ -27,6 +27,7 @@ function cancelHorizontalScroll(event) {
 function scrollHorizontally(event) {
     let classList = getClassList($(event.target).parents(".scroll-button")[0]);
     let direction = classList[classList.length - 1];
+    
     let target = $(event.target).parents(".container").children(".movie-list ul");
 
     if (direction == "scroll-button-left") {
@@ -34,8 +35,4 @@ function scrollHorizontally(event) {
     } else {
         target.scrollLeft(target.scrollLeft() + 390.36);
     }
-}
-
-function getClassList(element) {
-    return element.className.split(/\s+/);
 }

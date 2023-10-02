@@ -23,31 +23,19 @@ function runCheck() {
 }
 
 function checkMovie(li) {
-    let card = $(li).children(".movie-card")[0];
-    let classList = getClassList(card);
-    let movieName = classList[classList.length - 1];
+    var movie = getMovie($(li), false);
 
     button = $(li).find(".my-list-button").children();
 
-    if (sessionStorage.getItem(movieName) != null)
+    if (sessionStorage.getItem(movie) != null)
         button.attr("src", "../images/check_symbol.png")
 }
 
 
 function addMyListMovie() {
-    // the following line gets the card that was clicked (the div element)
-    let currCard = $(event.target).parents(".movie-card");
-    // the folowing gets the classes of the div
-    let classList = getClassList(currCard[0]);
-    // finally, this one gets the last class of the div element, which will always be the movie's name
-    let movie = classList[classList.length - 1];
+    var movie = getMovie($(event.target), true);
     
     if (sessionStorage.getItem(movie) == null)
         sessionStorage.setItem(movie, "");
         runCheck();
-}
-
-
-function getClassList(element) {
-    return element.className.split(/\s+/);
 }
