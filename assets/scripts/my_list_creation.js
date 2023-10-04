@@ -38,7 +38,6 @@ function makeMovieCard(movieCard, movieData) {
     movieCard.find(".movie-card").addClass(movieData.name);
     movieCard.find(".movie-vertical-poster").attr("src", movieData.verticalImageUrl);
     movieCard.find(".movie-vertical-poster").attr("alt", movieData.imageAlt);
-    movieCard.find(".play-button").attr("href", movieData.moviePageUrl);
     movieCard.find(".play-button").attr("title", movieData.moviePageUrlTitle);
 }
 
