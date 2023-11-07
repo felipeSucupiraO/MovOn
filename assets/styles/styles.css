@@ -177,7 +177,7 @@ nav ul {
 
     margin: 1em;
     
-    width: 15%;
+    width: 20%;
 
     display: none;
 }
@@ -204,7 +204,6 @@ nav ul {
     grid-template-areas: 
     "name img"
     "email img";
-    justify-items: center;
     align-items: center;
     gap: 0.5em;
     
