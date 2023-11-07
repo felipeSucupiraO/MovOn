@@ -30,7 +30,7 @@ function createUser() {
         sessionStorage.setItem("username", name.val());
         sessionStorage.setItem("email", email.val());
         sessionStorage.setItem("password", password.val());
-        sessionStorage.setItem("logado", "true");
+        sessionStorage.setItem("loged", "true");
     }
     else {
         window.alert("An account was already created. Please close and open the website again to create another.");
@@ -46,8 +46,8 @@ function loginUser() {
     var passwordInput = form.find("#password").val();
 
     if (emailInput == sessionStorage.getItem("email") && passwordInput == sessionStorage.getItem("password")) {
-        window.alert("Logado");
-        sessionStorage.setItem("logado", "true");
+        window.alert("loged");
+        sessionStorage.setItem("loged", "true");
     }
     else {
         window.alert("Email or Password Incorrect");

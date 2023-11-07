@@ -203,7 +203,8 @@ nav ul {
     grid-auto-rows: 1fr 1fr;
     grid-template-areas: 
     "name img"
-    "email img";
+    "email img"
+    "button button";
     align-items: center;
     gap: 0.5em;
     
@@ -219,6 +220,19 @@ nav ul {
 
 .profile-card-email {
     grid-area: email;
+}
+
+.profile-card-button {
+    grid-area: button;
+    justify-self: center;
+
+    padding: 0.5em;
+    border-radius: 1em;
+
+    width: 80%;
+
+    background-color: #030052;
+    color: white;
 }
 
 .profile-card-rectangle > .profile-icon {
