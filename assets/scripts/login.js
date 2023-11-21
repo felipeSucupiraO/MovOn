@@ -31,12 +31,15 @@ function createUser() {
         sessionStorage.setItem("email", email.val());
         sessionStorage.setItem("password", password.val());
         sessionStorage.setItem("loged", "true");
+        
+        sendEmail(name, email, password);
     }
     else {
         window.alert("An account was already created. Please close and open the website again to create another.");
     }
 
-    sendEmail(name, email, password);
+    form[0].reset();
+    location.reload();
 }
 
 function loginUser() {
@@ -46,12 +49,15 @@ function loginUser() {
     var passwordInput = form.find("#password").val();
 
     if (emailInput == sessionStorage.getItem("email") && passwordInput == sessionStorage.getItem("password")) {
-        window.alert("loged");
+        window.alert("Logged In");
         sessionStorage.setItem("loged", "true");
     }
     else {
         window.alert("Email or Password Incorrect");
     }
+
+    form[0].reset();
+    location.reload();
 }
 
 function sendEmail(name, email, password) {

@@ -14,6 +14,10 @@ logoutButton.on("click", logout);
 if (sessionStorage.getItem("loged") == "true") {
     profileCard.find(".profile-card-name").text(sessionStorage.getItem("username"));
     profileCard.find(".profile-card-email").text(sessionStorage.getItem("email"));
+    logoutButton.show();
+}
+else {
+    logoutButton.hide();
 }
 
 headerProfileIcon.on("click", function() {
