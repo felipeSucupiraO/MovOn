@@ -177,7 +177,7 @@ nav ul {
 
     margin: 1em;
     
-    width: 15%;
+    width: 20%;
 
     display: none;
 }
@@ -199,19 +199,18 @@ nav ul {
 .profile-card-rectangle {
     display: grid;
     grid-auto-flow: row;
-    grid-auto-columns: 1fr 1fr;
-    grid-auto-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "name img"
-    "email img";
-    justify-items: center;
+    "email img"
+    "button button";
     align-items: center;
     gap: 0.5em;
     
     background-color: #000436;
     
     padding: 1em;
-    border-radius: 10px;
+    border-radius: 0.5em;
 }
 
 .profile-card-name {
@@ -220,6 +219,20 @@ nav ul {
 
 .profile-card-email {
     grid-area: email;
+}
+
+.profile-card-button {
+    display: none;
+    grid-area: button;
+    justify-self: center;
+
+    padding: 0.5em;
+    border-radius: 1em;
+
+    width: 80%;
+
+    background-color: #030052;
+    color: white;
 }
 
 .profile-card-rectangle > .profile-icon {
@@ -496,7 +509,7 @@ This way, the form structure can exist while the button's size depends only of t
 .login-box {
     margin: 0 auto;
     padding: 3%;
-    border-radius: 35px;
+    border-radius: 1.75em;
 
     background-color: #62AFEA;
 
@@ -505,6 +518,24 @@ This way, the form structure can exist while the button's size depends only of t
 
 .login-box > h2 {
     text-align: center;
+}
+
+.login-message {
+    border-width: 0.2em;
+    border-style: solid;
+    border-radius: 0.2em;
+
+    text-align: center;
+}
+
+.login-message-green {
+    border-color: #42D665;
+    background-color: #4FFF78;
+}
+
+.login-message-red {
+    border-color: #D72F2F;
+    background-color: #FF4849;
 }
 
 .login-form {
@@ -543,7 +574,7 @@ This way, the form structure can exist while the button's size depends only of t
     font-size: 1rem;
 
     border: 0;
-    border-radius: 10px;
+    border-radius: 0.5em;
 
     padding: .5em 1em;
 }
@@ -607,7 +638,7 @@ This way, the form structure can exist while the button's size depends only of t
 
     padding: .5em;
     border: 0.1em solid black;
-    border-radius: 10px;
+    border-radius: 0.5em;
 
     background-color: #ffffff;
     color: black;

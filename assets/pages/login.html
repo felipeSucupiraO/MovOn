@@ -26,19 +26,19 @@
 
             <div class="profile-section">
                 <div class="login-links-container">
-                    <a class="login-link" href="./login.html" title="Sign In Page">Sign In</a>
+                    <a class="login-link" href="./sigin.html" title="Sign In Page">Sign In</a>
                     <a class="login-link" href="./login.html" title="LogIn Page">Login</a>
                 </div>
                 <img class="profile-icon" src="../images/account_picture.png" alt="Profile Icon">
             </div>
         </header>
         <div class="profile-card">
-            <div class="profile-card-triangle">
-            </div>
+            <div class="profile-card-triangle"></div>
             <div class="profile-card-rectangle">
-                <p class="profile-card-name">Nome</p>
-                <p class="profile-card-email">Email</p>
+                <p class="profile-card-name subtext">Nome</p>
+                <p class="profile-card-email subtext">Email</p>
                 <img class="profile-icon" src="../images/account_picture.png" alt="Profile Icon">
+                <button type="button" class="profile-card-button button" name="logout" id="logout">LogOut</button>
             </div>
         </div>
         
@@ -47,12 +47,8 @@
         <main class="login-page-main">
             <article class="login-box">
                 <h2>Log In</h2>
-                <form class="login-form" action="../scripts/loginForm.js">
+                <form class="login-form">
                     <ul>
-                        <li class="login-form-input">
-                            <label class="p" for="username">Name</label>
-                            <input required maxlength="40" type="text" name="username" id="username">
-                        </li>
                         <li class="login-form-input">
                             <label class="p" for="email">Email</label>
                             <input type="email" name="email" id="email">
@@ -68,7 +64,7 @@
                 </form>
                 
                 <p class="subtext">Already have an account?</p>
-                <a class="sign-in subtext" href="./login.html">Sign In</a>
+                <a class="sign-in subtext" href="./sigin.html">Sign In</a>
             </article>
         </main>
         
@@ -90,8 +86,9 @@
             </div>
         </footer>
         
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
         <script src="../scripts/header.js"></script>
-        <script src="<script src="https://smtpjs.com/v3/smtp.js""></script>
+        <script src="../scripts/login.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>
