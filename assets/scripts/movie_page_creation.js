@@ -2,7 +2,7 @@
 Variables Setting
 */
 
-var page = $("html");
+var htmlElement = $("html");
 var movieObjetct;
 
 /* 
@@ -32,9 +32,9 @@ Functions
 */
 
 function makeMoviePage(movieObjetct) {
-    page.find("title").append(movieObjetct.visualName + " - MovOn");
-    page.find("h2")[0].prepend(movieObjetct.visualName + " ");
-    page.find("#movie-name").append(movieObjetct.visualName);
-    page.find("#movie-description").append(movieObjetct.description);
-    page.find(".movie-page-showcase").attr("src", movieObjetct.horizontalImageUrl);
+    htmlElement.find("title").append(movieObjetct.visualName + " - MovOn");
+    htmlElement.find("h2")[0].prepend(movieObjetct.visualName + " ");
+    htmlElement.find("#movie-name").append(movieObjetct.visualName);
+    htmlElement.find("#movie-description").append(movieObjetct.description);
+    htmlElement.find(".movie-page-showcase").attr("src", "." + movieObjetct.horizontalImageUrl);
 }
