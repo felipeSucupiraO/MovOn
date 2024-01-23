@@ -14,9 +14,9 @@ fetch("../data/movies.json")
     return request.json();
 })
 .then ((data) => {    
-    for (let i = 0; i < data.movies.length; i++) {
-        if (data.movies[i].name == sessionStorage.getItem("currMovie")) {
-            movieObjetct = data.movies[i];
+    for (let i = 0; i < data.movieArray.length; i++) {
+        if (data.movieArray[i].name == sessionStorage.getItem("currMovie")) {
+            movieObjetct = data.movieArray[i];
             break;
         }
     }

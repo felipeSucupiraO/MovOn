@@ -16,7 +16,7 @@ fetch("../data/movies.json")
     return request.json();
 })
 .then((data) => {
-    data.movies.forEach(i => {
+    data.movieArray.forEach(i => {
         if (sessionStorage.getItem(i.name) != null) {
             movieCard.clone().appendTo(movieList);
             
