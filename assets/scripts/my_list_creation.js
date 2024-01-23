@@ -4,6 +4,7 @@ Variables setting
 var movieList = $(".my-list-list ul");
 var movieCard = $(".my-list-list li");
 var removeButtons;
+var playButton;
 
 /* 
 Main code
@@ -15,7 +16,7 @@ fetch("../data/movies.json")
     return request.json();
 })
 .then((data) => {
-    data.movies.forEach(i => {
+    data.movieArray.forEach(i => {
         if (sessionStorage.getItem(i.name) != null) {
             movieCard.clone().appendTo(movieList);
             
@@ -28,7 +29,11 @@ fetch("../data/movies.json")
 .then(() => {
     removeButtons = $(".my-list-button");
     removeButtons.on("click", removeMovie);
+    
+    playButton = $(".play-button");
+    playButton.on("click", getClickedMovie);
 })
+
 
 /* 
 Functions
@@ -36,7 +41,7 @@ Functions
 
 function makeMovieCard(movieCard, movieData) {
     movieCard.find(".movie-card").addClass(movieData.name);
-    movieCard.find(".movie-vertical-poster").attr("src", movieData.verticalImageUrl);
+    movieCard.find(".movie-vertical-poster").attr("src", "." + movieData.verticalImageUrl);
     movieCard.find(".movie-vertical-poster").attr("alt", movieData.imageAlt);
     movieCard.find(".play-button").attr("title", movieData.moviePageUrlTitle);
 }

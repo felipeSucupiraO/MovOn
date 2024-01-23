@@ -1,12 +1,12 @@
 {
-    "movies": [
+    "movieArray": [
         {
             "name": "City-of-Sin",
             "visualName": "City of Sin",
             "description": "City of Sin description. <br> City of Sin description.",
             "moviePageUrlTitle": "'Man in The Woods' Watch Page",
-            "verticalImageUrl": "../images/movies/City-of-Sin/vertical.jpg",
-            "horizontalImageUrl": "../images/movies/City-of-Sin/horizontal.jpg",
+            "verticalImageUrl": "./images/movies/City-of-Sin/vertical.jpg",
+            "horizontalImageUrl": "./images/movies/City-of-Sin/horizontal.jpg",
             "imageAlt": "'City of Sin' Movie Poster"
         }, 
         {
@@ -14,8 +14,8 @@
             "visualName": "The Johnsons",
             "description": "The Johnsons description. <br> The Johnsons description.",
             "moviePageUrlTitle": "'The Johnsons' Watch Page",
-            "verticalImageUrl": "../images/movies/The-Johnsons/vertical.jpg",
-            "horizontalImageUrl": "../images/movies/The-Johnsons/horizontal.jpg",
+            "verticalImageUrl": "./images/movies/The-Johnsons/vertical.jpg",
+            "horizontalImageUrl": "./images/movies/The-Johnsons/horizontal.jpg",
             "imageAlt": "'The Johnsons' Movie Poster"
         }, 
         {
@@ -23,8 +23,8 @@
             "visualName": "Love Happens",
             "description": "Love Happens description. <br> Love Happens description.",
             "moviePageUrlTitle": "'Love Happens' Watch Page",
-            "verticalImageUrl": "../images/movies/Love-Happens/vertical.jpg",
-            "horizontalImageUrl": "../images/movies/Love-Happens/horizontal.jpeg",
+            "verticalImageUrl": "./images/movies/Love-Happens/vertical.jpg",
+            "horizontalImageUrl": "./images/movies/Love-Happens/horizontal.jpeg",
             "imageAlt": "'Love Happens' Movie Poster"
         }, 
         {
@@ -32,8 +32,8 @@
             "visualName": "The Explorer",
             "description": "The Explorer description. <br> The Explorer description.",
             "moviePageUrlTitle": "'The Explorer' Watch Page",
-            "verticalImageUrl": "../images/movies/The-Explorer/vertical.jpg",
-            "horizontalImageUrl": "../images/movies/The-Explorer/horizontal.jpg",
+            "verticalImageUrl": "./images/movies/The-Explorer/vertical.jpg",
+            "horizontalImageUrl": "./images/movies/The-Explorer/horizontal.jpg",
             "imageAlt": "'The Explorer' Movie Poster"
         }, 
         {
@@ -41,8 +41,8 @@
             "visualName": "The Haunting of Sarah Roberts",
             "description": "The Haunting of Sarah Roberts description. <br> The Haunting of Sarah Roberts description.",
             "moviePageUrlTitle": "'The Haunting of Sarah Roberts' Watch Page",
-            "verticalImageUrl": "../images/movies/The-Haunting-of-Sarah-Roberts/vertical.jpg",
-            "horizontalImageUrl": "../images/movies/The-Haunting-of-Sarah-Roberts/horizontal.jpg",
+            "verticalImageUrl": "./images/movies/The-Haunting-of-Sarah-Roberts/vertical.jpg",
+            "horizontalImageUrl": "./images/movies/The-Haunting-of-Sarah-Roberts/horizontal.jpg",
             "imageAlt": "'The Haunting of Sarah Roberts' Movie Poster"
         }
     ]

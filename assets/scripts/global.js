@@ -8,6 +8,12 @@ function getClassList(element) {
     return element.className.split(/\s+/);
 }
 
+function getClickedMovie() {
+    var movie = getMovie($(event.target), true);
+
+    sessionStorage.setItem("currMovie", movie);
+}
+
 function getMovie(element, isChildren) {
     // isChildren = true: is a isChildren of the movie card
     // isChildren = false: is a parent of the movie card
