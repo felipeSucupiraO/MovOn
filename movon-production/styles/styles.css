@@ -1,0 +1,745 @@
+/* 
+General
+    font-family: 'Inter', sans-serif;
+Titles
+    font-family: 'Space Grotesk', sans-serif;
+Buttons
+    font-family: 'Roboto Mono', monospace;
+*/
+
+html {
+    font-size: 150%;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 810px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+/* ------------------
+    Typography
+   ------------------ */
+
+h1,
+h2,
+h3,
+p,
+.p,
+.h1,
+.h2,
+.h3,
+.subtext,
+a {
+    color: #ffffff;
+    margin: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h1, 
+.h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h2,
+.h2,
+h3,
+.h3 {
+    font-weight: 500;
+}
+
+h2, 
+.h2 {
+    font-size: 2.25rem;
+}
+
+h3, 
+.h3 {
+    font-size: 1.25rem;
+}
+
+p,
+.p {
+    font-size: 1rem;
+}
+
+.subtext {
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.login-link {
+    color: #545454;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+/* ----------------
+    Layout 
+   ---------------- */
+
+.inv {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* ----------------
+    Header 
+   ---------------- */
+
+header {
+    background-color: #030052;
+
+    padding: 1.5em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    max-width: 5%;
+    align-self: center;
+}
+
+nav {
+    width: 45%;
+    
+    margin-right: 23%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* the only reason why nav is a flex is to align the ul vertically */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+
+    width: 100%;
+}
+
+.profile-section {
+    width: 17%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login-links-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+.login-link {
+    color: #ffffff;
+}
+
+.profile-icon {
+    max-width: 30%;
+}
+
+.profile-card{
+    position: absolute;
+    right: 0%;
+
+    margin: 1em;
+    
+    width: 20%;
+
+    display: none;
+}
+
+.profile-card-triangle {
+    width: 15px;
+    height: 15px;
+    
+    background-color: #000436;
+    
+    align-self: center;
+
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-card-rectangle {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "name img"
+    "email img"
+    "button button";
+    align-items: center;
+    gap: 0.5em;
+    
+    background-color: #000436;
+    
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.profile-card-name {
+    grid-area: name;
+}
+
+.profile-card-email {
+    grid-area: email;
+}
+
+.profile-card-button {
+    display: none;
+    grid-area: button;
+    justify-self: center;
+
+    padding: 0.5em;
+    border-radius: 1em;
+
+    width: 80%;
+
+    background-color: #030052;
+    color: white;
+}
+
+.profile-card-rectangle > .profile-icon {
+    grid-area: img;
+
+    max-width: 100%;
+}
+
+@media (max-width: 810px) {
+    .header-logo {
+        max-width: 14%;
+    }
+    
+    nav {        
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        text-align: center;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        width: 15%;
+    }
+
+    .login-links-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-icon {
+        align-self: center;
+
+        max-width: 50%;
+    }
+
+    .profile-card {
+        width: 50%;
+    }
+}
+
+
+/* ----------------
+    Main 
+   ---------------- */
+
+main {
+    background-color: #004BBD;
+
+    min-height: 720px;
+}
+
+main > .container {
+    width: 90%;
+    padding: 13% 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-part {
+    width: 40%;
+}
+
+.main-part p {
+    font-size: 4em;
+}
+
+.lower-main-part {
+    display: flex;   
+    align-items: center;
+
+    margin-top: 3em;
+}
+
+.lower-main-part form {
+    margin-right: 2em;
+
+    height: 100%;
+}
+
+.lower-main-part button {
+    width: 100%;
+    height: 100%;
+
+    font-weight: 600;
+    font-size: 1.25rem;
+
+    padding: 0.5em 3em;
+
+    background-color: #ffffff;
+}
+
+.lower-main-part button:hover {
+    background-color: red;
+    color: #ffffff;
+} /* the size of the button here works on a cascading way: the button element is the size of the form element. The form has auto width, but the height is the size of the div. The div has auto height.
+This way, the form structure can exist while the button's size depends only of the size of the letters inside it. */
+
+.movie-showcase {
+    width: 50%;
+}
+
+.movie-showcase p {
+    background-color: hsla(0, 0%, 0%, 0.35); /* i used the hsla format to change the background's opacity (which isn't working btw) */
+
+    transform: translateY(-1.7rem);
+
+    display: block;
+
+    padding: 0 0.5em;
+    margin-bottom: -1.7rem; /* this margin makes the white space bellow the text disapear */
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.movie-horizontal-poster {
+    width: 100%;
+}
+
+@media(max-width: 810px) {
+    main > .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-part, .movie-showcase {
+        width: 100%;
+    }
+
+    .main-part {
+        margin: 13em 0;
+    }
+}
+
+/* ----------------
+    Main - Explore 
+   ---------------- */
+
+.movie-list {
+    padding: 0.5em;
+}
+
+.movie-list > .container {
+    display: flex;
+}
+
+.movie-list > h2 {
+    padding: 0.5em;
+}
+
+.scroll-button {
+    width: 10%;
+
+    display: flex;
+    align-items: center;
+    /* this flex is just to align the image vertically */
+}
+
+.scroll-button img {
+    width: 100%;
+}
+
+.scroll-button-right img {
+    transform: scaleX(-1);
+}
+
+.movie-list ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    gap: 1em;
+
+    overflow-x: scroll;
+    overscroll-behavior: contain;
+    /* these attributes under here take off the scrolling bar for some navigators */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    padding: 0.5em;
+}
+
+/* this selector takes off the scroll bar for some navigators */
+.movie-list ul::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-list li {
+    width: 100%;
+}
+
+.movie-card {
+    width: 100%;
+}
+
+.movie-vertical-poster {
+    max-width: 100%;
+}
+
+.movie-card-bar {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+.play-button, .my-list-button {
+    width: 20%;
+}
+
+.play-button img, .my-list-button img {
+    width: 100%;
+}
+
+.my-list-button {
+    background-color: #004BBD;
+    
+    border: 0;
+}
+
+.my-list-button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 810px) {
+    .scroll-button {
+        width: 50%;
+    }
+}
+
+/* ----------------
+    Main - My List 
+   ---------------- */
+
+.my-list-list ul {
+    width: 100%;
+    
+    padding: 0;
+
+    overflow-x: visible;
+
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    grid-template-columns: repeat(auto-fill, minmax(246px, 1fr));
+}
+
+@media (max-width: 810px) {
+    .my-list-list ul {
+        grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    }
+}
+
+/* ----------------
+    Main - Login 
+   ---------------- */
+
+.login-page-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* again, the only reason why this is flex is to align the login-container vertically */
+}
+
+.login-box {
+    margin: 0 auto;
+    padding: 3%;
+    border-radius: 1.75em;
+
+    background-color: #62AFEA;
+
+    width: 22%;
+}
+
+.login-box > h2 {
+    text-align: center;
+}
+
+.login-message {
+    border-width: 0.2em;
+    border-style: solid;
+    border-radius: 0.2em;
+
+    text-align: center;
+}
+
+.login-message-green {
+    border-color: #42D665;
+    background-color: #4FFF78;
+}
+
+.login-message-red {
+    border-color: #D72F2F;
+    background-color: #FF4849;
+}
+
+.login-form {
+    width: 100%;
+    margin: auto;
+}
+
+.login-form-input {
+    width: 100%;
+
+    margin: 1em 0;
+}
+
+.login-form-input > input {
+    width: 100%;
+
+    padding: 0.5em;
+    border-bottom: 0.1em solid #545454;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin: 0;
+
+    background-color: #62AFEA;
+    color: #ffffff;
+}
+
+.login-form-button {
+    text-align: center;
+
+    margin: 1em 0;
+}
+
+.login-form-button > input {
+    font-weight: 500;
+    font-size: 1rem;
+
+    border: 0;
+    border-radius: 0.5em;
+
+    padding: .5em 1em;
+}
+
+.login-form-button > input:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+.login-box > p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.sign-in {
+    text-align: center;
+
+    display: block;
+
+    width: 100%;
+}
+
+@media (max-width: 810px) {
+    .login-box {
+        width: 60%;
+
+        padding: 10%;
+    }
+}
+
+/* ----------------
+    Movie Page 
+   ---------------- */
+
+.back-button {
+    display: flex;
+    justify-content: space-around;
+
+    width: 10%;
+
+    align-items: center;
+}
+
+.back-button > img {
+    width: 30%;
+}
+
+.movie-page-main {
+    min-height: 540px;
+
+    padding: 4em 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.watch-button {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    padding: .5em;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+
+    background-color: #ffffff;
+    color: black;
+}
+
+.watch-button:hover {
+    background-color: #030052;
+    color: #ffffff;
+}
+
+.movie-page-main > aside {
+    width: 60%;
+}
+
+.movie-page-showcase {
+    width: 100%;
+}
+
+@media (max-width: 810px) {
+    .back-button {
+        width: 30%;
+
+        justify-content: center;
+    }
+
+    .movie-page-main {
+        flex-direction: column-reverse;
+
+        padding: 8em 2em;
+
+        gap: 5em;
+    }
+
+    .movie-page-main > aside {
+        width: 100%;
+    }
+}
+
+/* ----------------
+    Footer 
+   ---------------- */
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+    align-items: center;
+    gap: 60%;
+
+    background-color: #000436;
+
+    padding: 0 20%;
+}
+
+.socials {
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    width: 25%;
+}
+
+footer ul img {
+    width: 100%;
+}
+
+.footer-logo {
+    padding: 0.7em;
+}
+
+.footer-logo img {
+    width: 40%;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.copyright {
+    font-size: 0.6rem;
+    
+    text-align: center;
+}
+
+@media(max-width: 810px) {
+    footer {
+        grid-auto-columns: 35%;
+        gap: 30%;
+    }
+    
+    .socials {
+        justify-content: space-around;
+    }
+
+    .footer-logo {
+        padding: 0.3em;
+    }
+
+    .copyright {
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My List - MovOn</title>
+        <link rel="icon" href="../favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+    
+    <body>
+        <h1 class="inv">My List</h1>
+        
+        <header>
+            <img class="header-logo" src="../images/movon.png" alt="MovOn Logo">
+            
+            <nav>
+                <h2 class="inv">Navigation</h2>
+                <ul class="h3">
+                    <li><a href="../index.html" title="Home Page">Home</a></li>
+                    <li><a href="./explore.html" title="Explore Page">Explore</a></li>
+                    <li><a href="./my_list.html" title="My list">My List</a></li>
+                </ul>      
+            </nav>
+            
+            <div class="profile-section">
+                <div class="login-links-container">
+                    <a class="login-link" href="./sigin.html" title="Sign In Page">Sign In</a>
+                    <a class="login-link" href="./login.html" title="LogIn Page">Login</a>
+                </div>
+                <img class="profile-icon" src="../images/account_picture.png" alt="Profile Icon">
+            </div>
+        </header>
+        <div class="profile-card">
+            <div class="profile-card-triangle"></div>
+            <div class="profile-card-rectangle">
+                <p class="profile-card-name subtext">Nome</p>
+                <p class="profile-card-email subtext">Email</p>
+                <img class="profile-icon" src="../images/account_picture.png" alt="Profile Icon">
+                <button type="button" class="profile-card-button button" name="logout" id="logout">LogOut</button>
+            </div>
+        </div>
+        
+        <hr class="inv">
+        
+        <main>
+            <article class="movie-list my-list-list">
+                <h2 class="inv">My list Movies</h2>
+                <ul>
+                    <li>
+                        <div class="movie-card">
+                            <img class="movie-vertical-poster" src="" alt="">
+                            <div class="movie-card-bar">
+                                <a class="play-button" href="./movie-page.html" title=""><img src="../images/play_button.png" alt="Play Button"></a>
+                                <button class="my-list-button" title="Remove from My List"><img src="../images/minus-button.png" alt="Remove from My List Button"></button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </main>
+        
+        <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../scripts/global.js"></script>
+        <script src="../scripts/my_list_creation.js"></script>
+        
+        <hr class="inv">
+        
+        <footer>
+            <h2 class="inv">Footer</h2>
+            
+            <ul class="socials">
+                <li><a href="https://www.twitter.com" title="MovOn Twitter Account"><img src="../images/twitter_logo.png" alt="Twitter Profile Link"></a></li>
+                <li><a href="https://www.youtube.com" title="MovOn Youtube Account"><img src="../images/youtube_logo.png" alt="Youtube Channel Link"></a></li>
+                <li><a href="https://www.instagram.com" title="MovOn Instagram Account"><img src="../images/instagram_logo.png" alt="Instagram Profile Link"></a></li>
+            </ul>
+            
+            <div class="footer-logo">
+                <img class="logo" src="../images/movon.png" alt="MovOn Logo">
+                
+                <p class="copyright subtext">&#169 All rights reserverd.</p>
+            </div>
+        </footer>
+        
+        <script src="../scripts/header.js"></script>
+        <script src="../scripts/get_movie.js"></script>
+    </body>
+    </html>
